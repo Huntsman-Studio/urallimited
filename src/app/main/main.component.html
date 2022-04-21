@@ -32,31 +32,46 @@
   <!-- Companies -->
   <article>
 
-    <div class="grid-cols-5">
+    <div class="flex justify-center">
 
       <!-- AgriExport -->
-      <div>
-        <p (click)="showSummary('AgriExport')">AgriExport</p>
+      <div 
+        [ngClass]="_cmp == 'AgriExport' ? 'bg-transparent' : 'bg-grey1'"
+        class="cmp p-6 cursor-pointer" 
+        (click)="showSummary('AgriExport')">
+        <img class="w-64 grayscale" src="" alt="AgriExport" />
       </div>
 
       <!-- GB -->
-      <div>
-        <p (click)="showSummary('GB')">GB</p>
+      <div 
+        [ngClass]="_cmp == 'GB' ? 'bg-transparent' : 'bg-grey2'"
+        class="cmp p-6 cursor-pointer" 
+        (click)="showSummary('GB')">
+        <img class="w-64 grayscale" src="assets/img/gear_boxes.png" alt="GB Transmissions" />
       </div>
 
       <!-- La Leonessa -->
-      <div>
-        <p (click)="showSummary('LaLeonessa')">La Leonessa</p>
+      <div 
+        [ngClass]="_cmp == 'LaLeonessa' ? 'bg-transparent' : 'bg-grey1'"
+        class="cmp p-6 cursor-pointer" 
+        (click)="showSummary('LaLeonessa')">
+        <img class="w-64 grayscale" src="assets/img/leonessa.png" alt="La Leonessa" />
       </div>
 
       <!-- Omni Gear -->
-      <div>
-        <p (click)="showSummary('Omnigear')">Omni Gear</p>
+      <div 
+        [ngClass]="_cmp == 'Omnigear' ? 'bg-transparent' : 'bg-grey2'"
+        class="cmp p-6 cursor-pointer" 
+        (click)="showSummary('Omnigear')">
+        <img class="w-64 grayscale" src="assets/img/OmniGear.png" alt="Omnigear" />
       </div>
 
       <!-- Huntsman -->
-      <div>
-        <p (click)="showSummary('Huntsman')">Huntsman</p>
+      <div 
+        [ngClass]="_cmp == 'Huntsman' ? 'bg-transparent' : 'bg-grey1'"
+        class="cmp p-6 cursor-pointer" 
+        (click)="showSummary('Huntsman')">
+        <img class="w-64 grayscale" src="" alt="HuntsmanStudio" />
       </div>
 
     </div>
