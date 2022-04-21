@@ -1,4 +1,17 @@
 <nav class=" bg-primary flex gap-9 w-full justify-center items-center pt-6">
-  <p class="text-black text-2xl font-thin cursor-pointer" routerLink="/about">About</p>
-  <p class="text-black text-2xl font-thin cursor-pointer" routerLink="/contact">Contact</p>
+
+  <p 
+    [ngClass]="_router.url.includes('about') ? 'font-bold' : 'font-light'"
+    class="text-black text-2xl cursor-pointer" 
+    routerLink="/about">
+    About
+  </p>
+
+  <p 
+    [ngClass]="_router.url.includes('contact') ? 'font-bold' : 'font-light'"
+    class="text-black text-2xl cursor-pointer" 
+    routerLink="/contact">
+    Contact
+  </p>
+
 </nav>
