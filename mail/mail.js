@@ -22,20 +22,15 @@ app.listen(3000, () => {
 // define a send mail endpoint
 app.post('/sendmail', (req, res) => {
 
-    let newuser = {
-        name: req.body.name,
-        email: req.body.email,
-        message: req.body.message
-    }
-
-    console.log('Request name');
+    // console.log('Request name');
     let user = req.body;
+    // console.log(user);
 
     sendMail(user, (err, info) => {
 
         if ( err ) {
             console.log(err);
-            req.status(400);
+            // req.status(400);
             req.send({error: "Failed to send emial"});
         } else {
             console.log("Email has been sent");
@@ -46,24 +41,29 @@ app.post('/sendmail', (req, res) => {
 
 // SendMail function
 const sendMail = (user, callback) => {
+
     const transporter = nodemailer.createTransport({
-        host: 'linux16.name-servers.gr',
+        host: 'mail.klamaj.eu',
         port: 465,
-        secure: false,
+        secureConnection: true,
         auth: {
             user: 'test@klamaj.eu',
             pass: 'Testing@Mailer'
         }
-    })
-}
+    });
 
-// MailOptions
-const mailOptions = {
-    from: newuser.name + ' / ' + newuser.mail,
-    to: 'test@klamaj.eu',
-    subject: 'Mail from contact form Ural Limited',
-    html: '<p>' + newuser.message + '</p>'
-}
+    console.log(transporter);
 
-// Send Mail
-transporter.sendMail(mailOptions, callback);
+
+    // MailOptions
+    const mailOptions = {
+        from: user.name + ' / ' + user.email,
+        to: 'kri.lamaj@gmail.com',
+        subject: 'Mail from contact form Ural Limited',
+        html: '<p>' + user.message + '</p>'
+    }
+
+    // console.log(mailOptions);
+
+    transporter.sendMail(mailOptions, callback);
+}
