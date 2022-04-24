@@ -20,7 +20,7 @@ app.listen(3000, () => {
 
 
 // define a send mail endpoint
-app.post('/sendmail', (req, res) => {
+app.post('/sendEmail', (req, res) => {
 
     // console.log('Request name');
     let user = req.body;
