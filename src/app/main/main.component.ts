@@ -19,6 +19,6 @@ export class MainComponent implements OnInit {
   showSummary(cmp: String){
 
     this._cmp = cmp;
-    console.log(this._cmp);
+    // console.log(this._cmp);
   }
 }
