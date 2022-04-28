@@ -67,7 +67,9 @@
         [ngClass]="_cmp == 'Omnigear' ? 'bg-transparent' : 'bg-grey2'"
         class="cmp p-6 cursor-pointer" 
         (click)="showSummary('Omnigear')">
-        <img class="w-64 grayscale" src="assets/img/omnigear.png" alt="Omnigear" loading="lazy"/>
+        <img
+          [ngClass]="_cmp != 'Omnigear' ? 'grayscale' : ''" 
+          class="w-64" src="assets/img/omnigear.png" alt="Omnigear" loading="lazy"/>
       </div>
 
       <!-- Huntsman -->
