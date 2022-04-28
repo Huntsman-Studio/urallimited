@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
 })
 export class MainComponent implements OnInit {
 
-  _cmp: String = "";
+  _cmp: String = "AgriExport";
 
   constructor(private _router: Router) { }
 
