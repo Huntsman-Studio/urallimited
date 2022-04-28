@@ -59,7 +59,9 @@
         [ngClass]="_cmp == 'LaLeonessa' ? 'bg-transparent' : 'bg-grey1'"
         class="cmp p-6 cursor-pointer" 
         (click)="showSummary('LaLeonessa')">
-        <img class="w-64 grayscale" src="assets/img/la_leonessa.png" alt="La Leonessa" loading="lazy"/>
+        <img
+          [ngClass]="_cmp != 'LaLeonessa' ? 'grayscale' : ''" 
+          class="w-64" src="assets/img/la_leonessa.png" alt="La Leonessa" loading="lazy"/>
       </div>
 
       <!-- Omni Gear -->

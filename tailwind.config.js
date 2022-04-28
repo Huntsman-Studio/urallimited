@@ -5,7 +5,7 @@ module.exports = {
       backgroundImage: {
         'agriexportbg': 'url("assets/img/AgriexportImage.webp")',
         'gbtransbg': 'url("assets/img/GBTransmissionsImage.webp")',
-        'laleonessabg': 'url("assets/img/AgriexportImage.webp")',
+        'laleonessabg': 'url("assets/img/LaLeonessaImage.webp")',
         'omnigearbg': 'url("assets/img/OmniGearImage.webp")',
         'huntsmanbg': 'url("assets/img/HunstmanStudioImage.webp")'
       },
