@@ -3,10 +3,10 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'agriexportbg': 'url("assets/img/AgriExportImage.jpg)"',
-        'gbtransbg': 'url("assets/img/AgriExportImage.jpg)"',
-        'laleonessabg': 'url("assets/img/AgriExportImage.jpg)"',
-        'omnigearbg': 'url("assets/img/AgriExportImage.jpg)"',
+        'agriexportbg': 'url("assets/img/AgriexportImage.webp")',
+        'gbtransbg': 'url("assets/img/AgriexportImage.webp")',
+        'laleonessabg': 'url("assets/img/AgriexportImage.webp")',
+        'omnigearbg': 'url("assets/img/AgriexportImage.webp")',
         'huntsmanbg': 'url("assets/img/HunstmanStudioImage.webp")'
       },
       backgroundColor: theme => ({
