@@ -39,7 +39,9 @@
         [ngClass]="_cmp == 'AgriExport' ? 'bg-transparent' : 'bg-grey1'"
         class="cmp p-6 cursor-pointer" 
         (click)="showSummary('AgriExport')">
-        <img class="w-64 grayscale" src="assets/img/agriexport.png" alt="AgriExport" loading="lazy"/>
+        <img
+          [ngClass]="_cmp != 'AgriExport' ? 'grayscale' : ''"
+          class="w-64" src="assets/img/agriexport.png" alt="AgriExport" loading="lazy"/>
       </div>
 
       <!-- GB -->
@@ -47,7 +49,9 @@
         [ngClass]="_cmp == 'GB' ? 'bg-transparent' : 'bg-grey2'"
         class="cmp p-6 cursor-pointer" 
         (click)="showSummary('GB')">
-        <img class="w-64 grayscale" src="assets/img/gb_transmissions.png" alt="GB Transmissions" loading="lazy"/>
+        <img
+          [ngClass]="_cmp != 'GB' ? 'grayscale' : ''" 
+          class="w-64" src="assets/img/gb_transmissions.png" alt="GB Transmissions" loading="lazy"/>
       </div>
 
       <!-- La Leonessa -->
