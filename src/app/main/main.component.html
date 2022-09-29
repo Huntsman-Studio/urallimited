@@ -33,6 +33,16 @@
   <article>
 
     <div class="flex justify-center">
+      
+      <!-- La Leonessa -->
+      <div 
+        [ngClass]="_cmp == 'LaLeonessa' ? 'bg-transparent' : 'bg-grey1'"
+        class="cmp p-6 cursor-pointer" 
+        (click)="showSummary('LaLeonessa')">
+        <img
+          [ngClass]="_cmp != 'LaLeonessa' ? 'grayscale' : ''" 
+          class="w-64" src="assets/img/la_leonessa.png" alt="La Leonessa" loading="lazy"/>
+      </div>
 
       <!-- AgriExport -->
       <div 
@@ -52,16 +62,6 @@
         <img
           [ngClass]="_cmp != 'GB' ? 'grayscale' : ''" 
           class="w-64" src="assets/img/gb_transmissions.png" alt="GB Transmissions" loading="lazy"/>
-      </div>
-
-      <!-- La Leonessa -->
-      <div 
-        [ngClass]="_cmp == 'LaLeonessa' ? 'bg-transparent' : 'bg-grey1'"
-        class="cmp p-6 cursor-pointer" 
-        (click)="showSummary('LaLeonessa')">
-        <img
-          [ngClass]="_cmp != 'LaLeonessa' ? 'grayscale' : ''" 
-          class="w-64" src="assets/img/la_leonessa.png" alt="La Leonessa" loading="lazy"/>
       </div>
 
       <!-- Omni Gear -->
