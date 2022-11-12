@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HeaderModule } from './header/header.module';
+import { AppRoutingModule } from '../app-routing.module';
 
 
 
@@ -8,7 +9,8 @@ import { HeaderModule } from './header/header.module';
   declarations: [],
   imports: [
     CommonModule,
-    HeaderModule
+    HeaderModule,
+    AppRoutingModule
   ],
   exports: [
     HeaderModule
