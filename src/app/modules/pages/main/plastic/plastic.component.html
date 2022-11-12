@@ -1,0 +1,24 @@
+<div class="w-full mt-10">
+
+    <div class="justify-start items-center w-full">
+        <!-- Namli -->
+        <div
+            (click)="setPlastic()"
+            [ngClass]="[plastic == 'namli' ? 'bg-[#1585FF]' : 'bg-[#D4DEE8]']" 
+            class="w-full flex justify-center items-center h-24">
+            <img src="assets/images/namli.png" alt="Namli" lazyload/>
+        </div>
+        <!-- Nurpet -->
+        <div
+            (click)="setPlastic()"
+            [ngClass]="[plastic == 'nurpet' ? 'bg-[#1585FF]' : 'bg-[#C9D4E0]']"
+            class="w-full flex justify-center items-center h-24">
+            <img src="assets/images/nurpet.svg" alt="Nurpet" lazyload/>
+        </div>
+    </div>
+
+    <app-namli *ngIf="plastic == 'namli'"></app-namli>
+    <app-nurpet *ngIf="plastic == 'nurpet'"></app-nurpet>
+
+    
+</div>

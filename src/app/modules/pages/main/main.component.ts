@@ -7,9 +7,27 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainComponent implements OnInit {
 
+  cat: string = 'agriculture';
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  setCategory(val: string) : void {
+    switch (val) {
+      case 'agriculture':
+        this.cat = val;
+        break;
+      case 'plastic':
+        this.cat = val;
+        break;
+      case 'tech':
+        this.cat = val;
+        break;
+      default:
+        this.cat = 'agriculture';
+        break;
+    }
+  }
 }

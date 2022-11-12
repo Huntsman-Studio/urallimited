@@ -1,0 +1,15 @@
+<div class="w-full mt-10">
+
+    <div class="justify-start items-center w-full">
+        <!-- Vimi -->
+        <div
+            [ngClass]="[tech == 'vimi' ? 'bg-[#1585FF]' : 'bg-[#D4DEE8]']" 
+            class="w-full flex justify-center items-center h-24">
+            <img src="assets/images/vimi.png" alt="Vimi Fasteners" lazyload/>
+        </div>
+    </div>
+
+    <app-vimi *ngIf="tech == 'vimi'"></app-vimi>
+
+    
+</div>

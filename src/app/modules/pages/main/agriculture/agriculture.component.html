@@ -1,0 +1,40 @@
+<div class="w-full mt-10">
+
+    <div class="justify-start items-center w-full">
+        <!-- Agriexport -->
+        <div
+            (click)="setView('agriexport')"
+            [ngClass]="[view == 'agriexport' ? 'bg-[#1585FF]' : 'bg-[#D4DEE8]']" 
+            class="w-full flex justify-center items-center h-24">
+            <img src="assets/images/agriexport.png" alt="Agriexport" lazyload/>
+        </div>
+        <!-- GB -->
+        <div
+            (click)="setView('gb')"
+            [ngClass]="[view == 'gb' ? 'bg-[#1585FF]' : 'bg-[#C9D4E0]']"
+            class="w-full flex justify-center items-center h-24">
+            <img src="assets/images/gb.png" alt="GB Transmissions" lazyload/>
+        </div>
+        <!-- LaLeonessa -->
+        <div
+            (click)="setView('leonessa')"
+            [ngClass]="[view == 'leonessa' ? 'bg-[#1585FF]' : 'bg-[#D4DEE8]']" 
+            class="w-full flex justify-center items-center h-24">
+            <img src="assets/images/leonessa.png" alt="La Leonessa" lazyload/>
+        </div>
+        <!-- Omnigear -->
+        <div
+            (click)="setView('omnigear')"
+            [ngClass]="[view == 'omnigear' ? 'bg-[#1585FF]' : 'bg-[#C9D4E0]']" 
+            class="w-full flex justify-center items-center h-24">
+            <img src="assets/images/omnigear.png" alt="Omnigear" lazyload/>
+        </div>
+    </div>
+
+    <app-agriexport *ngIf="view == 'agriexport'"></app-agriexport>
+    <app-gb *ngIf="view == 'gb'"></app-gb>
+    <app-leonessa *ngIf="view == 'leonessa'"></app-leonessa>
+    <app-omnigear *ngIf="view == 'omnigear'"></app-omnigear>
+
+    
+</div>
