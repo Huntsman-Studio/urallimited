@@ -14,6 +14,7 @@ import { TechnologyComponent } from './main/technology/technology.component';
 import { NamliComponent } from './main/plastic/namli/namli.component';
 import { NurpetComponent } from './main/plastic/nurpet/nurpet.component';
 import { VimiComponent } from './main/technology/vimi/vimi.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { VimiComponent } from './main/technology/vimi/vimi.component';
   ],
   imports: [
     CommonModule,
-    PagesRoutingModule
+    PagesRoutingModule,
+    ReactiveFormsModule
   ]
 })
 export class PagesModule { }
