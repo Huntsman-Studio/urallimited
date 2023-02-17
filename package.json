@@ -9,7 +9,7 @@
     "test": "ng test",
     "dev:ssr": "ng run urallimited:serve-ssr",
     "serve:ssr": "node dist/urallimited/server/main.js",
-    "build:ssr": "ng build && ng run urallimited:server",
+    "build:ssr": "NODE_ENV=production ng build && ng run urallimited:server",
     "prerender": "ng run urallimited:prerender"
   },
   "private": true,
